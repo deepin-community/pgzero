@@ -1,0 +1,55 @@
+pgzero (1.2.post4+dfsg-2) unstable; urgency=medium
+
+  * Add some further comments to debian/copyright providing context for github
+    link. (Closes: 904674)
+  * Drop Build-dependency on python-setuptools (Closes: 943165)
+  * Clean up pgzero/__pycache__ in override_dh_auto_clean
+
+ -- Peter Michael Green <plugwash@debian.org>  Fri, 25 Oct 2019 23:28:08 +0000
+
+pgzero (1.2.post4+dfsg-1) unstable; urgency=medium
+
+  * Initial upload to Debian (previous versions were in raspberry pi
+    foundation repository) (Closes: 892386)
+  * Set myself as maintainer.
+  * Merge upstream Master, turn upstream commit after latest release into
+    quilt patch ( debian/patches/add-repl-to-roadmap.patch )
+  * Strip out a number of examples/images/sounds etc due to unclear licensing
+    (see debian/copyright for details), this does not cause any regressions for
+    users as those files are not yet included in any binary packages.
+  * Remove debian/patches/setup-readme.patch, merged upstream.
+  * Cleanup egg info in clean target.
+  * Remove outdated X-Python3-Version.
+
+ -- Peter Michael Green <plugwash@debian.org>  Thu, 07 Jun 2018 20:23:43 +0100
+
+pgzero (1.2.post1-2) stretch; urgency=medium
+
+  * Change package architecture to 'all'
+  * Bump Standards-Version to 3.9.8
+
+ -- Serge Schneider <serge@raspberrypi.org>  Tue, 20 Mar 2018 12:04:22 +0000
+
+pgzero (1.2.post1-1) stretch; urgency=medium
+
+  * New upstream release
+
+ -- Serge Schneider <serge@raspberrypi.org>  Thu, 01 Mar 2018 16:08:05 +0000
+
+pgzero (1.1-1) jessie; urgency=medium
+
+  * Upstream 1.1 release
+
+ -- Serge Schneider <serge@raspberrypi.org>  Wed, 04 Nov 2015 15:24:53 +0000
+
+pgzero (1.0.2-1) jessie; urgency=low
+
+  * Update to new upstream release
+
+ -- Serge Schneider <serge@raspberrypi.org>  Wed, 10 Jun 2015 17:54:47 +0100
+
+pgzero (1.0.1-1) jessie; urgency=low
+
+  * Initial release
+
+ -- Serge Schneider <serge@raspberrypi.org>  Wed, 03 Jun 2015 15:45:17 +0100
